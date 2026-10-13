@@ -1,7 +1,7 @@
-setwd("~/M5542_Bulk_RNA_Seq/GSE130588_WGNCA_05212025")
+setwd("~/GSE130588-WGCNA-Workflow")
 load("runi_GSE130588_WGNCA_qc_ardigen_project_parameters.RData")
 active.base<-paste(title.base, "WGCNA", sep="_") # for figure titles etc. Could be Active Female, Male, Inactive...
-analysisDir<- "~/M5542_Bulk_RNA_Seq/GSE130588_WGNCA_05212025/scripts/" # location of the current script, make sure it ends in a forwardslash
+analysisDir<- "~/GSE130588-WGCNA-Workflow/scripts/" # location of the current script, make sure it ends in a forwardslash
 save(globalDir,projectDir,scriptDir,esetDir,analysisDir,file.base,title.base,active.base,file=paste0(file.base,"_analysis_parameters.RData"))
 setwd(analysisDir)
 # There should be no more necessary changes past this point
